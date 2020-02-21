@@ -1,0 +1,28 @@
+<div class="container-fluid  text-white" style="margin-top: 70px;">
+    <h1>Following people want to contact</h1>
+    <br>
+    {{#each contacts}}
+    <div class="row">
+        <div class="col-md-9 ">
+            <div class="card p-4 m-2 alert-danger" style="width: 25rem;">
+
+                <div class="card-body">
+                    <h4 class="card-title">{{name}}</h4>
+                    <h6 class="card-title">{{email}}</h6>
+                    <h6 class="card-title">{{mobile}}</h6>
+
+
+                </div>
+
+                <button class=" btn-light btn-outline-danger m-2"> <a href="/contact/{{_id}}/delete">Delete</a>
+                </button>
+
+            </div>
+        </div>
+
+    </div>
+
+    <br><br>
+    {{/each}}
+
+</div>

@@ -1,0 +1,23 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00b7ff;
+}
+body {
+  background-image: url("/images/image-9.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.col-md-3{
+  transition: 0.3s ease-in-out;
+}
+.col-md-3 :hover{
+  transform: scale(1.1);
+  transform: rotate(20deg);
+}
+
+  
+ 

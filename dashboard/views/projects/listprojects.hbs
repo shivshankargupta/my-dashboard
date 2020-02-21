@@ -1,0 +1,35 @@
+
+<div class="container-fluid text-white mt-3">
+
+<div class="row ">
+    <div class="col-md-8 mt-5 text-white ">
+        <h1>list of projects</h1>
+    </div>
+    <div class="col-md-4 text-right mt-5 w-100">
+        <a href="/projects/new" class="btn-primary w-100">Create New</a>
+
+    </div>
+</div>
+<table>
+    {{#each projects}}
+    <tr class="mt-5">
+        <th class="mt-5">image</th>
+        <th>title</th>
+        <th>description</th>
+        <th>Action</th>
+    </tr>
+
+    <tr>
+        <td><img src="{{image}}" width="50" height="50"></td>
+        <td>{{title}}</td>
+        <td>{{description}}</td>
+        <td>
+            <a class="text-white" href="/projects/{{_id}}">details</a>
+            <a class="text-white" href="/projects/{{_id}}/delete">delate</a>
+          
+        </td>
+    </tr>
+
+    {{/each}}
+</table>
+</div>
